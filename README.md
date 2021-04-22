@@ -1,4 +1,4 @@
 # Manycam_4.0.52_Cr4ck-
 
-install setup
+install setup  
 launch manycam and then launch the crack
