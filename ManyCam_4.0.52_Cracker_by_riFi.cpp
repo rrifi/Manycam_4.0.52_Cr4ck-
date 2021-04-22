@@ -87,6 +87,7 @@ void memWrite() {
 
 	//*******************************************************************************************************
 
+	/*
 	bann = 0x43;
 	if (WriteProcessMemory(hProcess, (LPVOID)baseAddressAdded(baseAddress, 0xBA1180), (LPCVOID)&bann, 1, NULL)) { totalPatch = totalPatch + 1; }
 	bann = 0x72;
@@ -97,7 +98,8 @@ void memWrite() {
 	if (WriteProcessMemory(hProcess, (LPVOID)baseAddressAdded(baseAddress, 0xBA1181), (LPCVOID)&bann, 1, NULL)) { totalPatch = totalPatch + 1; }
 	bann = 0x6B;
 	if (WriteProcessMemory(hProcess, (LPVOID)baseAddressAdded(baseAddress, 0xBA1181), (LPCVOID)&bann, 1, NULL)) { totalPatch = totalPatch + 1; }
-
+	*/
+	
 	//*******************************************************************************************************
 	// PARTIE TEXTE
 	int value = 0x43;
@@ -122,7 +124,7 @@ void memWrite() {
 	//*******************************************************************************************************
 
 
-	int eraseChar = 0xBA1199; // Caractères vides
+	int eraseChar = 0xBA1199; // CaractÃ¨res vides
 
 	for (int j = 0; j < 27; j++) {
 
@@ -132,8 +134,8 @@ void memWrite() {
 
 
 	std::string ttltmp = std::to_string(totalPatch);
-	std::string ttl = "Injection réussie ! \n(" + ttltmp + "/61)";
-	MessageBoxA(NULL, &ttl[0], "Succès", MB_OK + MB_ICONINFORMATION);
+	std::string ttl = "Injection rÃ©ussie ! \n(" + ttltmp + "/56)";
+	MessageBoxA(NULL, &ttl[0], "SuccÃ¨s", MB_OK + MB_ICONINFORMATION);
 	exit(0);
 
 
